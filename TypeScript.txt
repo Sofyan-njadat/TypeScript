@@ -1,0 +1,18 @@
+هاي  كل الخطوات الي بتحتاجوها لحتى تعملو ملف التايبسكربت وتحولوه لجافاسكربت  :  
+
+install Node.js ==>https://nodejs.org/en/download
+to check if node is installed successfully run : "node -v"
+to install typescript :  "npm install -g typescript"
+to check if typescript is installed successfully run : "tsc -v"
+to compile the typescript file for the first time or to update the TS file run :     "tsc FileName.ts"
+to run the js file inside VS-Code without go to browser run :      "node FileName.js"
+
+
+
+
+
+
+
+
+هاذ الكورس الي رح نعتمده للتايبسكربت : 
+|https://www.youtube.com/playlist?list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ
