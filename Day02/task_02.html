@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5% 0% 0% 5%;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            width: 15%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        button {
+            border-radius: 10%;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #283ca7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* .cont01 {
+            display: flex;
+            flex-direction: row;
+        } */
+
+        /* .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        } */
+
+        #productList {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: flex-start;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 15px);
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #dadada;
+            max-width: 30%;
+            min-width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add New Item</h1>
+    <form id="productForm">
+        <label for="name">Name :</label>
+        <input type="text" id="name" required>
+
+        <label for="description">Description :</label>
+        <textarea id="description" required></textarea>
+
+        <label for="price">Price :</label>
+        <input type="number" id="price" required>
+
+        <label for="quantity">Quantity :</label>
+        <input type="number" id="quantity" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div class="cont01">
+        <div id="productList"></div> <!-- لعرض الكاردات -->
+    </div>
+    <script src="task_02.js"></script>
+</body>
+
+</html>
